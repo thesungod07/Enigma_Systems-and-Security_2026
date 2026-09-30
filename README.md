@@ -54,18 +54,19 @@ You start together, then pick your path:
 
 ```
 .
-├── README.md                          ← you are here
-├── level-1-networking/
+├── README.md
+├── level-1/
 │   └── <github-username>/
-├── syscom/
-│   ├── level-2-terminal/<github-username>/
-│   ├── level-3-inspector/<github-username>/
-│   └── level-4-toolkit/<github-username>/
-└── cybersecurity/
-    ├── level-2-sleuth/<github-username>/
-    ├── level-3-vault/<github-username>/
-    └── level-4-htb/<github-username>/
-```
+├── level-2/
+│   ├── Cybersecurity/<github-username>/
+│   └── SysCom/<github-username>/
+├── level-3/
+│   ├── Cybersecurity/<github-username>/
+│   └── SysCom/<github-username>/
+└── level-4/
+    ├── Cybersecurity/<github-username>/
+    └── SysCom/<github-username>/
+ ```
 
 Every submission lives in a folder named **exactly** after your GitHub username. This is non-negotiable - it's how we track progression and enforce PR limits.
 

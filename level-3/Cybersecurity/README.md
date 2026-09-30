@@ -4,7 +4,7 @@
 
 ![Level](https://img.shields.io/badge/Level-3%20%2F%204-orange?style=for-the-badge)
 ![Track](https://img.shields.io/badge/Track-Cybersecurity-8a2be2?style=for-the-badge)
-![PR Limit](https://img.shields.io/badge/PR%20Limit-1-red?style=for-the-badge)
+![PR Limit](https://img.shields.io/badge/PR%20Limit-2-red?style=for-the-badge)
 ![Difficulty](https://img.shields.io/badge/Difficulty-Intermediate-orange?style=for-the-badge)
 
 **Break a hash. Break a login. Welcome to offensive security.**
@@ -40,6 +40,7 @@ Complete **two Apprentice-level labs** on PortSwigger's free **Web Security Acad
 Both are free, hosted, and legal to attack - that's the entire point of the Academy.
 
 🔗 Start here: [PortSwigger Web Security Academy - SQL Injection](https://portswigger.net/web-security/sql-injection)
+🔗 Find the labs [here](https://portswigger.net/web-security/all-labs)
 
 ---
 
@@ -85,7 +86,7 @@ Your `report.md` must include:
 ## 💡 Tips
 
 - `hashcat --example-hashes` or `hashid hash.txt` will help you identify the algorithm before you burn time on the wrong cracking mode.
-- `rockyou.txt` ships with most pentesting distros (Kali) at `/usr/share/wordlists/rockyou.txt.gz` - remember to `gunzip` it first.
+- `rockyou.txt` ships with most pentesting distros (Kali/Parrot) at `/usr/share/wordlists/rockyou.txt.gz` - remember to `gunzip` it first.
 - PortSwigger's labs are entirely legal and self-contained - but the instinct you're building (try the payload, read the error, adjust) is one you should **only** ever point at systems you own or are explicitly authorized to test.
 - Stuck on a lab? PortSwigger's own "View solution" links exist for a reason - using them and understanding *why* the fix works still counts as learning.
 

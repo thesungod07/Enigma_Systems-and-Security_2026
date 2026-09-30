@@ -24,9 +24,9 @@ Enumerate and exploit real, intentionally vulnerable machines on **HackTheBox's 
 
 | PR | Tier | Machine | OS | Skill focus | Difficulty |
 |:--:|------|---------|----|-------------|:----------:|
-| **PR 1** | 🟢 Entry | **Meow** or **Fawn** | Linux | Telnet / FTP service enumeration | ⭐ |
-| **PR 2** | 🟡 Medium | **Dancing** | Windows | Unauthenticated SMB share navigation | ⭐⭐ |
-| **PR 3** | 🔴 Hard | **Redeemer** | Linux | Redis database exploitation | ⭐⭐⭐ |
+| **Task 1** | 🟢 Entry | **Meow** or **Fawn** | Linux | Telnet / FTP service enumeration | ⭐ |
+| **Task 2** | 🟡 Medium | **Dancing** | Windows | Unauthenticated SMB share navigation | ⭐⭐ |
+| **Task 3** | 🔴 Hard | **Redeemer** | Linux | Redis database exploitation | ⭐⭐⭐ |
 
 > **The rule:** your *n*-th PR to this level must be at the *n*-th tier or higher. A second PR at Meow-level doesn't count as progress. One machine (PR 1) is a complete, valid Level 4 contribution on its own - going further is extra credit, not a requirement.
 
@@ -34,13 +34,10 @@ Enumerate and exploit real, intentionally vulnerable machines on **HackTheBox's 
 
 ## 🗂️ Tier details
 
-### 🟢 PR 1 - Meow *or* Fawn
-Both are the traditional "first HTB box" - a service with no authentication at all handing you a flag almost immediately. The point isn't difficulty, it's learning the enumerate → connect → flag workflow you'll reuse for the rest of your career.
+### 🟢 Task 1 - Meow *or* Fawn
+Both are the traditional "first HTB box" - a service with no authentication at all handing you a flag almost immediately. The point isn't difficulty, it's learning the enumerate → connect → flag workflow you'll reuse for the rest of your career. You are free to do both.
 
-- **Meow:** open Telnet, no credentials required.
-- **Fawn:** open FTP, anonymous login enabled.
-
-### 🟡 PR 2 - Dancing
+### 🟡 Task 2 - Dancing
 An unauthenticated SMB share on a Windows box. You'll practice `smbclient`/`smbmap`-style enumeration and navigating shares without credentials.
 
 ### 🔴 PR 3 - Redeemer
@@ -64,7 +61,7 @@ Each `report.md` must include:
 
 - 🔎 **Full Nmap scan results** for the target
 - 📝 A **step-by-step walkthrough** of your enumeration and exploitation process
-- 🚩 The **recovered flag**
+- 🚩 The **recovered flags**
 - 🖼️ A **screenshot showing your active HTB session / target IP**, proving the work was done live against the actual machine
 
 ---
@@ -77,7 +74,7 @@ Each `report.md` must include:
 4. Open a PR titled `Cybersecurity L4 [PRn] - <your-github-username>` (e.g. `Cybersecurity L4 [PR2] - thesungod07`).
 5. Note in the PR description which tier this is and confirm your prior Level 4 submission(s), if any.
 
-> A maintainer checks that each new PR targets an equal-or-higher tier than your last merged Level 4 submission before merging.
+> The maintainer (me) will check if each new PR targets an equal-or-higher tier than your last merged Level 4 submission before merging.
 
 ---
 

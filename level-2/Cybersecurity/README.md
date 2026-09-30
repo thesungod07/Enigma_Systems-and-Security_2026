@@ -85,7 +85,7 @@ Your `report.md` must include:
 
 ## 💡 Tips
 
-- Wireshark's `http.request.method == "POST"` filter narrows things down fast if plain `http` gives you too much noise.
+- Wireshark's `http.request.method == "POST"` filter narrows things down fast if the plain `http` filter gives you too much noise.
 - `exiftool` is free and cross-platform - [ExifTool by Phil Harvey](https://exiftool.org/) - or use any online EXIF viewer if you'd rather not install anything.
 - This is about developing an eye for what's hiding in plain sight - both skills come up constantly in real incident response and OSINT work.
 

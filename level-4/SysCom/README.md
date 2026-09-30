@@ -23,19 +23,17 @@ Build a small toolkit of real automation scripts. Unlike Levels 1–3, you can s
 
 | PR | Tier | Task | Difficulty |
 |:--:|------|------|:----------:|
-| **PR 1** | 🟢 Entry | **File Organizer** - sorts a messy directory's contents into subfolders by file extension | ⭐ |
-| **PR 2** | 🟡 Medium | **Process Monitor** - watches a given process, logs downtime/crash events to `alerts.log` | ⭐⭐ |
-| **PR 3** | 🔴 Hard | **Environment Bootstrapper** - detects the OS/distro and non-interactively installs `git`, `curl`, `python3` | ⭐⭐⭐ |
+| **Task 1** | 🟢 Entry | **File Organizer** - sorts a messy directory's contents into subfolders by file extension | ⭐ |
+| **Task 2** | 🟡 Medium | **Process Monitor** - watches a given process, logs downtime/crash events to `alerts.log` | ⭐⭐ |
+| **Task 3** | 🔴 Hard | **Environment Bootstrapper** - detects the OS/distro and non-interactively installs `git`, `curl`, `python3` | ⭐⭐⭐ |
 
-> **The rule:** your *n*-th PR to this level must be at the *n*-th tier or higher. You can't submit PR 1 twice and call the second one PR 2 - a second easy script doesn't count as progress and won't be merged as a new tier.
->
 > Only doing one tier? Totally fine - PR 1 alone is a valid, complete Level 4 contribution. Going further is the bonus round, not a requirement.
 
 ---
 
-## 🗂️ Tier details
+## 🗂️ Task details
 
-### 🟢 PR 1 - File Organizer Script
+### 🟢 Task 1 - File Organizer Script
 **Goal:** Given a directory, sort its files into subfolders by extension (`.pdf` → `pdfs/`, `.png` → `images/`, etc.)
 
 **Must handle:**
@@ -45,7 +43,7 @@ Build a small toolkit of real automation scripts. Unlike Levels 1–3, you can s
 
 ---
 
-### 🟡 PR 2 - Process Monitor Script
+### 🟡 Task 2 - Process Monitor Script
 **Goal:** Monitor a specified process by name or PID, and log an alert whenever it goes down.
 
 **Must handle:**
@@ -56,7 +54,7 @@ Build a small toolkit of real automation scripts. Unlike Levels 1–3, you can s
 
 ---
 
-### 🔴 PR 3 - Environment Bootstrapper
+### 🔴 Task 3 - Environment Bootstrapper
 **Goal:** Detect the OS/distro (Ubuntu, Debian, Fedora, Arch, macOS, etc.) and install `git`, `curl`, and `python3` **non-interactively** - no prompts the user has to sit and answer.
 
 **Must handle:**
@@ -72,9 +70,9 @@ Place scripts inside `syscom/level-4-toolkit/<your-github-username>/`, one file 
 
 ```
 syscom/level-4-toolkit/<your-github-username>/
-├── PR1_file_sorter.sh
-├── PR2_process_monitor.sh
-└── PR3_env_setup.sh
+├── file_sorter.sh
+├── process_monitor.sh
+└── env_setup.sh
 ```
 
 Each script should include a short header comment explaining usage:

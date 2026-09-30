@@ -17,7 +17,7 @@
 
 Simulate a single office building with **two independent subnets** - say, HR and Tech - and connect them so devices on one subnet can successfully reach devices on the other, through proper routing.
 
-This is your entry ticket to the rest of the ladder. Clear this, and you unlock the 🖥️ SysCom and 🔐 Cybersecurity branches.
+This is your entry ticket to the rest of the ladder. Clear this, and you can proceed to the 🖥️ SysCom and 🔐 Cybersecurity branches.
 
 ---
 
@@ -85,6 +85,7 @@ Your `README.md` should include:
 ## 💡 Tips
 
 - Don't have Packet Tracer? [Download it free from the Cisco Networking Academy](https://www.netacad.com/courses/packet-tracer) (needs a free NetAcad account).
+- Don't know networking? Check out [Networking Fundamentals](https://tryhackme.com/module/network-fundamentals)
 - Static IPs are fine and expected - you don't need DHCP for this challenge.
 - If your ping times out, check in order: PC IP/gateway → switch connections → router interface IPs → router interface status (`no shutdown`).
 - Naming your PCs and switches clearly (`PC-HR-1`, `SW-Tech`, etc.) makes your screenshot far easier to review - and easier for you to debug.

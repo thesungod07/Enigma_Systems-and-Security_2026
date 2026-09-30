@@ -15,7 +15,7 @@
 
 ## 📖 What is this?
 
-This is **Enigma's official Hacktoberfest 2026 challenge repository**, merging what used to be two separate committees - **Systems & Commands (SysCom)** and **Cybersecurity** - into a single ladder anyone can climb.
+This is **Enigma's official Hacktoberfest 2026 challenge repository for Systems and Security**, merging what used to be two separate committees - **SysCom** and **Cybersecurity** - into a single ladder anyone can climb.
 
 You start together, then pick your path:
 
@@ -41,10 +41,10 @@ You start together, then pick your path:
 |:-----:|-------|:--------:|:-----------|
 | 🟢 **1** | Common - Networking | **1 PR** | Beginner |
 | 🟡 **2** | Branch - Terminal Trivia / Digital Sleuth | **1 PR** | Beginner |
-| 🟠 **3** | Branch - System Inspector / Crack the Vault | **1 PR** | Intermediate |
+| 🟠 **3** | Branch - System Inspector / Crack the Vault |**1 PR/ 2 PRs** | Intermediate |
 | 🔴 **4** | Branch - Toolkit / HTB Arena | **Multiple PRs** | Increasingly hard |
 
-> ⚠️ **Levels 1–3 are strictly single-attempt.** One PR per participant, per level. This keeps the early ladder fair - everyone gets exactly one shot to prove they've cleared it, no farming easy points.
+> ⚠️ **Levels 1–3 are strictly single-attempt.** One PR per participant, per level (with an exception for Cybersecurity **only**). This keeps the early ladder fair - everyone gets exactly one shot to prove they've cleared it, no farming easy points.
 >
 > 🚀 **Level 4 is where you go wild.** Multiple PRs are allowed, but each one must be **harder than your last**. Coast at the easy tier forever, and your later PRs simply won't count - see each Level 4 README for its own difficulty tiers.
 
@@ -84,7 +84,7 @@ Every submission lives in a folder named **exactly** after your GitHub username.
 
 ## ✅ Contribution rules
 
-- One PR = one level attempt, for Levels 1–3. A second PR to a level you've already submitted to will be closed.
+- One PR = one level attempt, for Levels 1–3. A second PR to a level you've already submitted to will be closed (with the exception being for Cybersecurity).
 - Your submission folder name **must match your GitHub username exactly**.
 - No AI-generated write-ups pretending to be your own investigation - we can tell, and it's not the point of the exercise.
 - Anything involving scanning, exploitation, or cracking stays **inside the provided artifacts / your own lab / HTB's own infrastructure**. Never point these tools at anything you don't own or haven't been explicitly given permission to test.
@@ -93,7 +93,6 @@ Every submission lives in a folder named **exactly** after your GitHub username.
 
 ## 🏆 Why bother?
 
-- Real, verifiable Hacktoberfest contributions.
 - Level 4 is a genuine skill ladder: finish it and you'll have touched shell scripting, process monitoring, environment automation, packet analysis, hash cracking, web exploitation, and real HackTheBox machines.
 - Bragging rights. Obviously.
 
@@ -101,7 +100,7 @@ Every submission lives in a folder named **exactly** after your GitHub username.
 
 <div align="center">
 
-**Questions?** Ping the Enigma Discord or open an issue.
+**Questions?** Ping me in the the Enigma Discord (@the_sun_god) or open an issue.
 Good luck, and welcome to the ladder. 🕹️
 
 </div>

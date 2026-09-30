@@ -5,7 +5,7 @@
 ### Systems & Commands × Cybersecurity - one repo, one ladder, four levels.
 
 ![Hacktoberfest](https://img.shields.io/badge/Hacktoberfest-2026-blueviolet?style=for-the-badge&logo=hacktoberfest&logoColor=white)
-![Made by Enigma](https://img.shields.io/badge/Made%20by-Enigma%20CS%20Club-ff69b4?style=for-the-badge)
+![Made by Enigma](https://img.shields.io/badge/Made%20by-Enigma%20CS%20Club-000000?style=for-the-badge)
 ![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge)
 ![Levels](https://img.shields.io/badge/Levels-4-orange?style=for-the-badge)
 

@@ -2,7 +2,7 @@
 
 # 🕹️ Enigma Hacktoberfest 2026
 
-### Systems & Commands × Cybersecurity - one repo, one ladder, four levels.
+### Syscom × Cybersecurity - one repo, one ladder, four levels.
 
 ![Hacktoberfest](https://img.shields.io/badge/Hacktoberfest-2026-blueviolet?style=for-the-badge&logo=hacktoberfest&logoColor=white)
 ![Made by Enigma](https://img.shields.io/badge/Made%20by-Enigma%20CS%20Club-000000?style=for-the-badge)
@@ -15,7 +15,7 @@
 
 ## 📖 What is this?
 
-This is **Enigma's official Hacktoberfest 2026 challenge repository for Systems and Security**, merging what used to be two separate committees - **SysCom** and **Cybersecurity** - into a single ladder anyone can climb.
+This is **Enigma's official Hacktoberfest 2026 challenge repository for the Systems and Security sub-committee**, merging what used to be two separate committees - **SysCom** and **Cybersecurity** - into a single ladder anyone can climb.
 
 You start together, then pick your path:
 
@@ -84,7 +84,7 @@ Every submission lives in a folder named **exactly** after your GitHub username.
 
 ## ✅ Contribution rules
 
-- One PR = one level attempt, for Levels 1–3. A second PR to a level you've already submitted to will be closed (with the exception being for Cybersecurity).
+- One PR = one level attempt, for Levels 1–3. A second PR to a level you've already submitted to will be closed (with the exception being **only** for Cybersecurity).
 - Your submission folder name **must match your GitHub username exactly**.
 - No AI-generated write-ups pretending to be your own investigation - we can tell, and it's not the point of the exercise.
 - Anything involving scanning, exploitation, or cracking stays **inside the provided artifacts / your own lab / HTB's own infrastructure**. Never point these tools at anything you don't own or haven't been explicitly given permission to test.
@@ -101,6 +101,6 @@ Every submission lives in a folder named **exactly** after your GitHub username.
 <div align="center">
 
 **Questions?** Ping me in the the Enigma Discord (@the_sun_god) or open an issue.
-Good luck, and welcome to the ladder. 🕹️
+Good luck, and welcome to the Hacktoberfest. 🕹️
 
 </div>

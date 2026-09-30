@@ -1,13 +1,13 @@
 <div align="center">
 
-# 🧰 SysCom · Level 4 - The Systems Toolkit
+# 🕵️ Cybersecurity · Level 2 - Digital Sleuth
 
-![Level](https://img.shields.io/badge/Level-4%20%2F%204-red?style=for-the-badge)
-![Track](https://img.shields.io/badge/Track-SysCom-2ea44f?style=for-the-badge)
-![PR Limit](https://img.shields.io/badge/PR%20Limit-Multiple-9cf?style=for-the-badge)
-![Difficulty](https://img.shields.io/badge/Difficulty-Escalating-critical?style=for-the-badge)
+![Level](https://img.shields.io/badge/Level-2%20%2F%204-yellow?style=for-the-badge)
+![Track](https://img.shields.io/badge/Track-Cybersecurity-8a2be2?style=for-the-badge)
+![PR Limit](https://img.shields.io/badge/PR%20Limit-1-red?style=for-the-badge)
+![Difficulty](https://img.shields.io/badge/Difficulty-Beginner-brightgreen?style=for-the-badge)
 
-**The endgame. Multiple PRs allowed - but each one has to earn it.**
+**A packet capture and a photo. Two mysteries, one report.**
 
 </div>
 
@@ -15,100 +15,84 @@
 
 ## 🎯 Objective
 
-Build a small toolkit of real automation scripts. Unlike Levels 1–3, you can submit **more than one PR here** - but the whole point of Level 4 is that it gets **progressively harder**. You can't just resubmit three easy scripts and call it done.
+Get hands-on with the two most fundamental forms of digital forensics: reading raw network traffic, and pulling hidden data out of a file's metadata. No exploitation here - just careful looking.
 
 ---
 
-## 📈 The progressive tiers
+## 🧩 Part 1 - PCAP Analysis
 
-| PR | Tier | Task | Difficulty |
-|:--:|------|------|:----------:|
-| **PR 1** | 🟢 Entry | **File Organizer** - sorts a messy directory's contents into subfolders by file extension | ⭐ |
-| **PR 2** | 🟡 Medium | **Process Monitor** - watches a given process, logs downtime/crash events to `alerts.log` | ⭐⭐ |
-| **PR 3** | 🔴 Hard | **Environment Bootstrapper** - detects the OS/distro and non-interactively installs `git`, `curl`, `python3` | ⭐⭐⭐ |
+You're given `capture.pcap`, a network traffic capture. Somewhere in it, a login happened over **plain, unencrypted HTTP**.
 
-> **The rule:** your *n*-th PR to this level must be at the *n*-th tier or higher. You can't submit PR 1 twice and call the second one PR 2 - a second easy script doesn't count as progress and won't be merged as a new tier.
->
-> Only doing one tier? Totally fine - PR 1 alone is a valid, complete Level 4 contribution. Going further is the bonus round, not a requirement.
+**Your task:**
+1. Open `capture.pcap` in **Wireshark**.
+2. Filter for HTTP traffic (`http` display filter is a good start).
+3. Find the request where login credentials were submitted in the clear.
+4. Extract the **username and password**.
 
 ---
 
-## 🗂️ Tier details
+## 🖼️ Part 2 - Image Forensics
 
-### 🟢 PR 1 - File Organizer Script
-**Goal:** Given a directory, sort its files into subfolders by extension (`.pdf` → `pdfs/`, `.png` → `images/`, etc.)
+You're given `evidence.jpg`. It looks like an ordinary photo - but its metadata knows more than it's letting on.
 
-**Must handle:**
-- A configurable target directory (argument or hardcoded path - your call)
-- Grouping unknown extensions into a catch-all folder (e.g. `misc/`)
-- Not crashing on directories that already have subfolders inside them
-
----
-
-### 🟡 PR 2 - Process Monitor Script
-**Goal:** Monitor a specified process by name or PID, and log an alert whenever it goes down.
-
-**Must handle:**
-- Accepting a process name (or PID) to watch
-- Polling at a reasonable interval
-- Writing timestamped entries to `alerts.log` when the process stops responding or disappears
-- Exiting cleanly (Ctrl+C shouldn't leave orphaned background jobs)
+**Your task:**
+1. Run `exiftool evidence.jpg` (or any metadata reader of your choice).
+2. Extract the **GPS coordinates** embedded in the file.
+3. Note the **camera make/model and software** used to create or edit it.
 
 ---
 
-### 🔴 PR 3 - Environment Bootstrapper
-**Goal:** Detect the OS/distro (Ubuntu, Debian, Fedora, Arch, macOS, etc.) and install `git`, `curl`, and `python3` **non-interactively** - no prompts the user has to sit and answer.
+## 📂 Provided artifacts
 
-**Must handle:**
-- Correct package manager per distro (`apt`, `dnf`, `pacman`, `brew`, ...)
-- Skipping packages that are already installed
-- Failing gracefully with a clear message on an unsupported OS, rather than crashing silently
+```
+cybersecurity/level-2-sleuth/artifacts/
+├── capture.pcap
+└── evidence.jpg
+```
+
+Don't modify these - copy them locally if you need to, but the originals in `artifacts/` stay untouched for everyone else.
 
 ---
 
 ## 📦 Deliverables
 
-Place scripts inside `syscom/level-4-toolkit/<your-github-username>/`, one file per PR:
+Place this inside `cybersecurity/level-2-sleuth/<your-github-username>/`:
 
 ```
-syscom/level-4-toolkit/<your-github-username>/
-├── PR1_file_sorter.sh
-├── PR2_process_monitor.sh
-└── PR3_env_setup.sh
+cybersecurity/level-2-sleuth/<your-github-username>/
+└── report.md
 ```
 
-Each script should include a short header comment explaining usage:
+Your `report.md` must include:
 
-```bash
-#!/bin/bash
-# Usage: ./PR1_file_sorter.sh <target_directory>
-# Sorts files in <target_directory> into subfolders by extension.
-```
+- 🔑 The **extracted credentials** from the PCAP (username + password)
+- 📍 The **GPS coordinates** from the image, plus what location they resolve to (a quick reverse-geocode lookup is fine)
+- 📷 The **camera/software details** found in the metadata
+- 🛠️ The **exact Wireshark filter(s)** and **exiftool/tool commands** you used
 
 ---
 
 ## 🚀 How to submit
 
-1. Pick the tier that matches your PR number (your 1st PR here = Tier 1 or higher, your 2nd = Tier 2 or higher, and so on).
-2. Write and test the script.
-3. Add it to your folder alongside any previous Level 4 submissions.
-4. Open a PR titled `SysCom L4 [PRn] - <your-github-username>` (e.g. `SysCom L4 [PR2] - thesungod07`).
-5. In the PR description, note which tier you're submitting and confirm your prior Level 4 PR(s), if any.
+1. Grab the artifacts and work through both parts.
+2. Create your folder: `cybersecurity/level-2-sleuth/<your-github-username>/`
+3. Write up your findings in `report.md`.
+4. Open a PR titled `Cybersecurity L2 - <your-github-username>`.
 
-> A maintainer checks that each new PR is at an equal-or-higher tier than your last merged Level 4 PR before merging.
+> ⚠️ **One PR only** for this level.
 
 ---
 
 ## 💡 Tips
 
-- Test your scripts in a disposable VM or container before running them on your real machine - especially PR 3, which installs things.
-- `shellcheck` is a great free linter for catching common Bash mistakes before you submit.
-- Comment generously. These are exactly the kind of scripts a reviewer (or a future contributor) will want to reuse.
+- Wireshark's `http.request.method == "POST"` filter narrows things down fast if plain `http` gives you too much noise.
+- `exiftool` is free and cross-platform - [ExifTool by Phil Harvey](https://exiftool.org/) - or use any online EXIF viewer if you'd rather not install anything.
+- This is about developing an eye for what's hiding in plain sight - both skills come up constantly in real incident response and OSINT work.
 
 ---
 
 <div align="center">
 
-That's the full SysCom ladder. Nice work. 🕹️
+Cleared this? **[On to Level 3 - Crack the Vault & Web Basics →](../level-3-vault/)**
 
 </div>

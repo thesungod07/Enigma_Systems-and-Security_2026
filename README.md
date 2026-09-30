@@ -2,7 +2,7 @@
 
 # 🕹️ Enigma Hacktoberfest 2026
 
-### Syscom × Cybersecurity - one repo, one ladder, four levels.
+### Systems and Security - one repo, one ladder, four levels.
 
 ![Hacktoberfest](https://img.shields.io/badge/Hacktoberfest-2026-blueviolet?style=for-the-badge&logo=hacktoberfest&logoColor=white)
 ![Made by Enigma](https://img.shields.io/badge/Made%20by-Enigma%20CS%20Club-000000?style=for-the-badge)
